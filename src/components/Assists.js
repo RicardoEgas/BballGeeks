@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import {
   fetchPlayers, selectPlayers, selectPlayersStatus, selectPlayersError,
 } from '../redux/players';
+import PlayerStats from './PlayerStats';
 
 function Assists() {
   const dispatch = useDispatch();
@@ -51,12 +52,7 @@ function Assists() {
           </option>
         ))}
       </select>
-      {selectedPlayer && (
-        <div>
-          <h2>Selected Player ID:</h2>
-          <p>{selectedPlayer}</p>
-        </div>
-      )}
+      {selectedPlayer && <PlayerStats selectedPlayerId={selectedPlayer} />}
     </div>
   );
 }
