@@ -1,10 +1,10 @@
-// PlayerStats.js
-
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import PropTypes from 'prop-types';
+import { useParams } from 'react-router';
 
 function PlayerStats({ selectedPlayerId }) {
+  const { season } = useParams();
   const [playerStats, setPlayerStats] = useState(null);
 
   useEffect(() => {
@@ -13,7 +13,7 @@ function PlayerStats({ selectedPlayerId }) {
         try {
           const response = await axios.get('https://www.balldontlie.io/api/v1/season_averages', {
             params: {
-              season: '2018',
+              season,
               player_ids: [selectedPlayerId],
             },
           });
@@ -30,7 +30,7 @@ function PlayerStats({ selectedPlayerId }) {
     };
 
     fetchPlayerStats();
-  }, [selectedPlayerId]);
+  }, [selectedPlayerId, season]);
 
   return (
     <div>
