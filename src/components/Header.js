@@ -3,37 +3,15 @@ import { NavLink } from 'react-router-dom';
 function Header() {
   return (
     <header>
-      <h1>NBA stats leaders</h1>
+      <h1>NBA stats</h1>
       <nav className="navbar">
         <ul>
           <li>
-            <NavLink
-              to="points"
-              className={({ isActive }) => (isActive ? 'active link' : 'pending link')}
-            >
-              Points
+            <NavLink to="PlayerSearch" className="link">
+              Search Player
             </NavLink>
           </li>
-          <li>
-            <NavLink to="rebounds" className="link">
-              Rebounds
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="assists" className="link">
-              Assists
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="blocks" className="link">
-              Blocks
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="steals" className="link">
-              Steals
-            </NavLink>
-          </li>
+
         </ul>
       </nav>
     </header>
