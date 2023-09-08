@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/BballGeeks/static/css/main.c0970569.css",
-    "main.js": "/BballGeeks/static/js/main.5045dff7.js",
+    "main.css": "/BballGeeks/static/css/main.debf9fdd.css",
+    "main.js": "/BballGeeks/static/js/main.0f38201e.js",
     "index.html": "/BballGeeks/index.html",
-    "main.c0970569.css.map": "/BballGeeks/static/css/main.c0970569.css.map",
-    "main.5045dff7.js.map": "/BballGeeks/static/js/main.5045dff7.js.map"
+    "main.debf9fdd.css.map": "/BballGeeks/static/css/main.debf9fdd.css.map",
+    "main.0f38201e.js.map": "/BballGeeks/static/js/main.0f38201e.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0970569.css",
-    "static/js/main.5045dff7.js"
+    "static/css/main.debf9fdd.css",
+    "static/js/main.0f38201e.js"
   ]
 }
