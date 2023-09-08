@@ -150,7 +150,7 @@ If you like this project give me a star⭐️!
 
 ##  Acknowledgments
 
-I would like to thank Microverse!
+I would like to credit to the original designer Nelson Sakwa in Behance and I would like to thank Microverse!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

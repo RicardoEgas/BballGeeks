@@ -11,13 +11,10 @@ const initialState = {
 };
 
 export const fetchPlayers = createAsyncThunk('players/fetchPlayers', async () => {
-  let allPlayers = [];
-  let page = 1;
-  let retries = 0;
-
-  while (retries < maxRetries) {
+  const allPlayers = [];
+  const retries = 0;
+  const fetchPage = async (page) => {
     try {
-      // eslint-disable-next-line no-await-in-loop
       const response = await axios.get('https://www.balldontlie.io/api/v1/players', {
         params: {
           page,
@@ -26,22 +23,22 @@ export const fetchPlayers = createAsyncThunk('players/fetchPlayers', async () =>
       });
 
       if (response.data.data.length === 0) {
-        break; // No more players to fetch
+        return; // No more players to fetch
       }
 
-      allPlayers = [...allPlayers, ...response.data.data];
-      page += 1; // Increment page for the next request
+      allPlayers.push(...response.data.data);
+      await fetchPage(page + 1); // Recursively fetch the next page
     } catch (error) {
-      retries += 1;
-
-      // eslint-disable-next-line no-await-in-loop
-      await new Promise((resolve) => setTimeout(resolve, 30000));
+      if (retries < maxRetries) {
+        await new Promise((resolve) => setTimeout(resolve, 30000));
+        await fetchPage(page); // Retry the current page
+      } else {
+        throw new Error('Max retries reached');
+      }
     }
-  }
+  };
 
-  if (retries === maxRetries) {
-    throw new Error('Max retries reached');
-  }
+  await fetchPage(1); // Start fetching from the first page
 
   return allPlayers;
 });
