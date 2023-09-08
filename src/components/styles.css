@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  background-color: #4369b2;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: left;
+  margin: 1rem;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+  font-size: 16px;
+}
+
+.seasonsList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style-type: none;
+  grid-auto-rows: 100px;
+  place-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.autosuggest-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.suggestions-list-item {
+  list-style-type: none;
+  padding: 2px;
+  color: white;
+  text-align: center;
+  background-color: #5688e4;
+  border: 1px solid black;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.suggestions-list-item:hover {
+  opacity: 50%;
+}
+
+.playerStats {
+  text-align: center;
+}
