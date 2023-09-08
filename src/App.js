@@ -1,14 +1,18 @@
 import { Routes, Route } from 'react-router';
-import Header from './components/Header';
+import Home from './components/Home';
 import './App.css';
 import PlayerSearch from './components/PlayerSearch';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Header />} />
-      <Route path="/player-search/:season" element={<PlayerSearch />} />
-    </Routes>
+    <div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/player-search/:season" element={<PlayerSearch />} />
+      </Routes>
+    </div>
   );
 }
 
