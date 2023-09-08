@@ -33,6 +33,8 @@
 
 BballGeeks is a comprehensive mobile application designed for basketball enthusiasts and NBA fans. This app provides users with access to a wealth of NBA statistics spanning over 10 seasons. Whether you're a casual fan or a dedicated basketball analyst, BballGeeks offers a wide range of features and data to satisfy your basketball cravings.
 
+Project Presentation link - https://www.loom.com/share/c7532bfffe96492bb437581787cb5077?sid=5ccd4c70-8574-4f94-907d-da3a7eb0c20e
+
 ## Built With
 
 ### Tech Stack 
