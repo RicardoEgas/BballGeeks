@@ -97,6 +97,9 @@ To run tests, run the following command:
 - npx eslint "**/*.{js,jsx}"
 - npx stylelint "**/*.{css,scss}"
 
+### Live Demo
+
+[Demo](https://ricardoegas.github.io/BballGeeks)
 
 ### Deployment
 
