@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router';
+import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import './App.css';
 import PlayerSearch from './components/PlayerSearch';
@@ -9,7 +9,7 @@ function App() {
     <div>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/BballGeeks" element={<Home />} />
         <Route path="/player-search/:season" element={<PlayerSearch />} />
       </Routes>
     </div>
