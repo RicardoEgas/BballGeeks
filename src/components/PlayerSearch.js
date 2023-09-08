@@ -47,7 +47,7 @@ function PlayerSearch() {
   const getSuggestionValue = (suggestion) => `${suggestion.first_name} ${suggestion.last_name}`;
 
   const renderSuggestion = (suggestion) => (
-    <div>{`${suggestion.first_name} ${suggestion.last_name}`}</div>
+    <div className="suggestions-list-item">{`${suggestion.first_name} ${suggestion.last_name}`}</div>
   );
 
   const handleSuggestionSelected = (_, { suggestionValue }) => {
@@ -85,6 +85,7 @@ function PlayerSearch() {
         getSuggestionValue={getSuggestionValue}
         renderSuggestion={renderSuggestion}
         inputProps={{
+          className: 'autosuggest-input',
           placeholder: 'Search for a player',
           value: searchTerm,
           onChange: (_, { newValue }) => setSearchTerm(newValue),

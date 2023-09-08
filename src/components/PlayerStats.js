@@ -3,6 +3,9 @@ import axios from 'axios';
 import PropTypes from 'prop-types';
 import { useParams } from 'react-router';
 
+// Function to remove punctuation and brackets from JSON string
+const removePunctuation = (jsonString) => jsonString.replace(/[{},;()'"/]/g, '');
+
 function PlayerStats({ selectedPlayerId }) {
   const { season } = useParams();
   const [playerStats, setPlayerStats] = useState(null);
@@ -19,7 +22,8 @@ function PlayerStats({ selectedPlayerId }) {
           });
 
           if (response.data.data.length > 0) {
-            setPlayerStats(response.data.data[0]);
+            const strippedStats = removePunctuation(JSON.stringify(response.data.data[0], null, 2));
+            setPlayerStats(strippedStats);
           } else {
             setPlayerStats(null);
           }
@@ -33,10 +37,10 @@ function PlayerStats({ selectedPlayerId }) {
   }, [selectedPlayerId, season]);
 
   return (
-    <div>
+    <div className="playerStats">
       <h2> Player Stats </h2>
       {playerStats !== null ? (
-        <pre>{JSON.stringify(playerStats, null, 2)}</pre>
+        <pre>{playerStats}</pre>
       ) : (
         <p>No player stats available for the selected player.</p>
       )}

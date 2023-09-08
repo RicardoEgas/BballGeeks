@@ -1,11 +1,12 @@
 import { NavLink } from 'react-router-dom';
+import './styles.css';
 
 function Header() {
   return (
     <header>
       <h1>NBA stats from the past 10 years</h1>
       <nav className="navbar">
-        <ul>
+        <ul className="seasonsList">
           <li>
             <NavLink to="/player-search/2022" className="link">
               Season 2022/2023
