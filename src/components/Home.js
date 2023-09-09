@@ -5,59 +5,59 @@ function Home() {
   return (
     <section>
       <h1>NBA stats from the past 10 years</h1>
-      <ul className="seasonsList">
-        <li>
+      <div className="seasonsList">
+        <div>
           <NavLink to="/player-search/2022" className="link">
-            Season 2022/2023
+            <div>Season 2022/2023</div>
           </NavLink>
-        </li>
-        <li>
+        </div>
+        <div>
           <NavLink to="/player-search/2021" className="link">
-            Season 2021/2022
+            <div>Season 2021/2022</div>
           </NavLink>
-        </li>
-        <li>
+        </div>
+        <div>
           <NavLink to="/player-search/2020" className="link">
-            Season 2020/2021
+            <div>Season 2020/2021</div>
           </NavLink>
-        </li>
-        <li>
+        </div>
+        <div>
           <NavLink to="/player-search/2019" className="link">
-            Season 2019/2020
+            <div>Season 2019/2020</div>
           </NavLink>
-        </li>
-        <li>
+        </div>
+        <div>
           <NavLink to="/player-search/2018" className="link">
-            Season 2018/2019
+            <div>Season 2018/2019</div>
           </NavLink>
-        </li>
-        <li>
+        </div>
+        <div>
           <NavLink to="/player-search/2017" className="link">
-            Season 2017/2018
+            <div>Season 2017/2018</div>
           </NavLink>
-        </li>
-        <li>
+        </div>
+        <div>
           <NavLink to="/player-search/2016" className="link">
-            Season 2016/2017
+            <div>Season 2016/2017</div>
           </NavLink>
-        </li>
-        <li>
+        </div>
+        <div>
           <NavLink to="/player-search/2015" className="link">
-            Season 2015/2016
+            <div>Season 2015/2016</div>
           </NavLink>
-        </li>
-        <li>
+        </div>
+        <div>
           <NavLink to="/player-search/2014" className="link">
-            Season 2014/2015
+            <div>Season 2014/2015</div>
           </NavLink>
-        </li>
-        <li>
+        </div>
+        <div>
           <NavLink to="/player-search/2013" className="link">
-            Season 2013/2014
+            <div>Season 2013/2014</div>
           </NavLink>
-        </li>
+        </div>
 
-      </ul>
+      </div>
     </section>
   );
 }

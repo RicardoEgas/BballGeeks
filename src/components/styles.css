@@ -25,11 +25,23 @@ h1 {
 .seasonsList {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  list-style-type: none;
-  grid-auto-rows: 100px;
-  place-items: center;
   padding: 0;
   margin: 0;
+  grid-auto-rows: 100px;
+}
+
+.seasonsList > div:nth-child(odd) {
+  background-color: #4268af;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seasonsList > div:nth-child(even) {
+  background-color: #3f63a5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .link {
