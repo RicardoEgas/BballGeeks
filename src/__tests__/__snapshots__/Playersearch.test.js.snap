@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlayerSearch component renders correctly 1`] = `
+<div>
+  <h1>
+    Player Search
+  </h1>
+  <p>
+    You can search a player now! 😃 
+  </p>
+  <div
+    aria-expanded={false}
+    aria-haspopup="listbox"
+    aria-owns="react-autowhatever-1"
+    className="react-autosuggest__container"
+    role="combobox"
+  >
+    <input
+      aria-activedescendant={null}
+      aria-autocomplete="list"
+      aria-controls="react-autowhatever-1"
+      autoComplete="off"
+      className="autosuggest-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      placeholder="Search for a player"
+      type="text"
+      value=""
+    />
+    <div
+      className="react-autosuggest__suggestions-container"
+      id="react-autowhatever-1"
+      role="listbox"
+    />
+  </div>
+</div>
+`;

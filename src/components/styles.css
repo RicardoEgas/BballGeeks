@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  background-color: #4369b2;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: left;
+  background-color: #103475;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+  font-size: 16px;
+}
+
+.seasonsList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0;
+  margin: 0;
+  grid-auto-rows: 100px;
+}
+
+.seasonsList > div:nth-child(odd) {
+  background-color: #4268af;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seasonsList > div:nth-child(even) {
+  background-color: #3f63a5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.autosuggest-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.suggestions-list-item {
+  margin-right: 2rem;
+  padding: 2px;
+  color: white;
+  text-align: center;
+  background-color: #5688e4;
+  border: 1px solid black;
+  font-weight: 500;
+  cursor: pointer;
+  overflow: scroll;
+}
+
+.suggestions-list-item:hover {
+  opacity: 50%;
+}
+
+.playerStats {
+  text-align: center;
+}
+
+.home-btn {
+  margin: 0.5rem 0.5rem;
+  border-radius: 20%;
+  padding: 0.5rem;
+  background-color: white;
+}
+
+.home-btn:hover {
+  background-color: #4369b2;
+  color: #fff;
+}
+
+.NavLink {
+  text-decoration: none;
+}
