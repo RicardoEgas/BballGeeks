@@ -91,6 +91,9 @@ function PlayerSearch() {
           onChange: (_, { newValue }) => setSearchTerm(newValue),
         }}
         onSuggestionSelected={handleSuggestionSelected}
+        theme={{
+          container: 'autosuggest-container', // Apply your custom container class
+        }}
       />
       {selectedPlayer && <PlayerStats selectedPlayerId={selectedPlayer} />}
     </div>

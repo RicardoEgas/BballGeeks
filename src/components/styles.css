@@ -50,6 +50,17 @@ h1 {
   cursor: pointer;
 }
 
+.autosuggest-container {
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+.autosuggest-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 .autosuggest-input {
   width: 100%;
   padding: 10px;
@@ -60,7 +71,6 @@ h1 {
 }
 
 .suggestions-list-item {
-  margin-right: 2rem;
   padding: 2px;
   color: white;
   text-align: center;
@@ -68,7 +78,6 @@ h1 {
   border: 1px solid black;
   font-weight: 500;
   cursor: pointer;
-  overflow: scroll;
 }
 
 .suggestions-list-item:hover {
@@ -84,6 +93,7 @@ h1 {
   border-radius: 20%;
   padding: 0.5rem;
   background-color: white;
+  cursor: pointer;
 }
 
 .home-btn:hover {
